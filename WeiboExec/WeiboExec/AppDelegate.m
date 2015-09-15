@@ -6,7 +6,11 @@
 //  Copyright (c) 2015年 simao. All rights reserved.
 //
 
+#import "ViewController.h"
 #import "AppDelegate.h"
+#import "WeiboSDK.h"
+
+#define kAppKey         @"2045436852"
 
 @interface AppDelegate ()
 
@@ -16,6 +20,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [WeiboSDK enableDebugMode:YES];
+    [WeiboSDK registerApp:kAppKey];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[SendMessageToWeiboViewController alloc] init];
+    
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+
     // Override point for customization after application launch.
     return YES;
 }
@@ -42,6 +56,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [WeiboSDK handleOpenURL:url delegate:self ];
 }
 
 #pragma mark - Core Data stack
