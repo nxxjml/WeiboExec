@@ -21,6 +21,7 @@
 		C37896811BA6C77700BDA1B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37896801BA6C77700BDA1B7 /* CoreGraphics.framework */; };
 		C37896831BA6C79000BDA1B7 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C37896821BA6C79000BDA1B7 /* libWeiboSDK.a */; };
 		C37896861BA6D15C00BDA1B7 /* SendMessageToWeiboViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37896851BA6D15C00BDA1B7 /* SendMessageToWeiboViewController.m */; };
+		C37B43521BA96BE500089F82 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C37B43511BA96BE500089F82 /* CoreData.framework */; };
 		C389579D1BA02BF2005135BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C389579C1BA02BF2005135BB /* main.m */; };
 		C38957A01BA02BF2005135BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C389579F1BA02BF2005135BB /* AppDelegate.m */; };
 		C38957A31BA02BF2005135BB /* WeiboExec.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C38957A11BA02BF2005135BB /* WeiboExec.xcdatamodeld */; };
@@ -58,6 +59,8 @@
 		C37896821BA6C79000BDA1B7 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = Pods/WeiboSDK/libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
 		C37896841BA6D15C00BDA1B7 /* SendMessageToWeiboViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageToWeiboViewController.h; sourceTree = "<group>"; };
 		C37896851BA6D15C00BDA1B7 /* SendMessageToWeiboViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageToWeiboViewController.m; sourceTree = "<group>"; };
+		C37B43511BA96BE500089F82 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C37B43531BA96D8F00089F82 /* WeiboExec-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeiboExec-Prefix.pch"; sourceTree = "<group>"; };
 		C38957971BA02BF2005135BB /* WeiboExec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiboExec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C389579B1BA02BF2005135BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C389579C1BA02BF2005135BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C37B43521BA96BE500089F82 /* CoreData.framework in Frameworks */,
 				C37896831BA6C79000BDA1B7 /* libWeiboSDK.a in Frameworks */,
 				C37896811BA6C77700BDA1B7 /* CoreGraphics.framework in Frameworks */,
 				C378967F1BA6C77000BDA1B7 /* Foundation.framework in Frameworks */,
@@ -115,6 +119,7 @@
 		8AC02E25E2FCE2E2489BC412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C37B43511BA96BE500089F82 /* CoreData.framework */,
 				C37896821BA6C79000BDA1B7 /* libWeiboSDK.a */,
 				C37896801BA6C77700BDA1B7 /* CoreGraphics.framework */,
 				C378967E1BA6C77000BDA1B7 /* Foundation.framework */,
@@ -173,6 +178,7 @@
 			children = (
 				C389579B1BA02BF2005135BB /* Info.plist */,
 				C389579C1BA02BF2005135BB /* main.m */,
+				C37B43531BA96D8F00089F82 /* WeiboExec-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

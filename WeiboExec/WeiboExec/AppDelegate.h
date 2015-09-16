@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "SendMessageToWeiboViewController.h"
 
-@class SendMessageToWeiboViewController;
+//@class SendMessageToWeiboViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SendMessageToWeiboViewController : NSObject
+@interface SendMessageToWeiboViewController : UIViewController
 
 @end
