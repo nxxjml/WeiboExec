@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBHttpRequest.h"
 
-@interface SendMessageToWeiboViewController : UIViewController
+@interface SendMessageToWeiboViewController : UIViewController<WBHttpRequestDelegate>
 
 @end

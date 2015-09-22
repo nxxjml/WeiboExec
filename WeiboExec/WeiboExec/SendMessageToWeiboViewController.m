@@ -27,7 +27,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     UIButton *ssoButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [ssoButton setTitle:NSLocalizedString(@"请求微博认证（SSO授权）", nil) forState:UIControlStateNormal];
+    [ssoButton setTitle:NSLocalizedString(@"LOGIN", nil) forState:UIControlStateNormal];
     [ssoButton addTarget:self action:@selector(ssoButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     ssoButton.frame = CGRectMake(20, 90, 280, 40);
     [scrollView addSubview:ssoButton];
@@ -44,7 +44,7 @@
                          @"Other_Info_2": @[@"obj1", @"obj2"],
                          @"Other_Info_3": @{@"key1": @"obj1", @"key2": @"obj2"}};
     [WeiboSDK sendRequest:request];
-    NSLog(@"sso button pressed!");
+   // NSLog(@"sso button pressed!");
 }
 
 - (void)didReceiveMemoryWarning {
